@@ -308,9 +308,11 @@ Browser tests for the card: see `tests/card/README.md`.
 ### Releasing
 
 1. Bump `version` in `custom_components/habit_log/manifest.json` and `VERSION`
-   in `const.py` and `www/habit-log-card.js` (all three must match), and add a
-   `CHANGELOG.md` section headed `## <version>`.
-2. Commit, then push a tag `v<version>` (for example `v0.3.1`).
-3. The release workflow checks that the tag matches all three versions, runs
-   the tests, and publishes a GitHub release with that CHANGELOG section as
-   its notes. HACS then offers the update.
+   in `const.py` and `www/habit-log-card.js` (all three must match; a test
+   enforces it), and add a `CHANGELOG.md` section headed `## <version>`.
+2. Commit to `main`.
+3. GitHub > **Actions** > **Release** > **Run workflow** (branch `main`).
+   Alternatively push a tag `v<version>` from a local clone.
+4. The workflow checks the versions, runs the tests, creates tag
+   `v<version>` and a GitHub release whose notes are that CHANGELOG section.
+   HACS then offers the update under Settings > Updates.

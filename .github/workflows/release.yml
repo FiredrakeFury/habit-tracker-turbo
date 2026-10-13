@@ -1,24 +1,33 @@
 name: Release
 
+# Two ways to publish a release:
+#   1. Actions > Release > Run workflow (on main): releases the version in
+#      manifest.json, creating tag v<version> on the current main commit.
+#   2. Push a tag v<version> from a local clone.
+# Either way: every version string must match, the tests must pass, and the
+# notes come from the matching "## <version>" section of CHANGELOG.md.
+
 on:
   push:
     tags: ["v*"]
+  workflow_dispatch:
 
 permissions:
   contents: read
 
 concurrency:
-  group: release-${{ github.ref }}
+  group: release
   cancel-in-progress: false
 
 jobs:
   tests:
+    if: github.ref_type == 'tag' || github.ref == 'refs/heads/main'
     uses: ./.github/workflows/tests.yml
 
   release:
     name: Publish GitHub release
     needs: tests
-    runs-on: ubuntu-24.04 # pinned: Playwright and hacs/action are tested on 24.04
+    runs-on: ubuntu-24.04 # pinned to match the test jobs
     timeout-minutes: 10
     permissions:
       contents: write
@@ -26,21 +35,29 @@ jobs:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           persist-credentials: false
-      - name: Check tag matches every version string
+      - name: Check every version string matches
         env:
-          TAG: ${{ github.ref_name }}
+          REF_TYPE: ${{ github.ref_type }}
+          REF_NAME: ${{ github.ref_name }}
         run: |
           set -euo pipefail
-          version="${TAG#v}"
           manifest=$(python3 -c 'import json; print(json.load(open("custom_components/habit_log/manifest.json"))["version"])')
           const=$(sed -nE 's/^VERSION: Final = "([^"]+)"$/\1/p' custom_components/habit_log/const.py)
           card=$(sed -nE 's/^ *const VERSION = "([^"]+)";$/\1/p' custom_components/habit_log/www/habit-log-card.js)
-          echo "tag=${version} manifest=${manifest} const=${const} card=${card}"
-          if [ "${version}" != "${manifest}" ] || [ "${version}" != "${const}" ] || [ "${version}" != "${card}" ]; then
-            echo "::error::Tag ${TAG} does not match manifest/const/card versions"
+          if [ "${REF_TYPE}" = "tag" ]; then version="${REF_NAME#v}"; else version="${manifest}"; fi
+          echo "release=${version} manifest=${manifest} const=${const} card=${card}"
+          if ! printf '%s' "${version}" | grep -Eq '^[0-9]+\.[0-9]+\.[0-9]+$'; then
+            echo "::error::'${version}' is not a MAJOR.MINOR.PATCH version"
             exit 1
           fi
-          echo "VERSION=${version}" >> "${GITHUB_ENV}"
+          if [ "${version}" != "${manifest}" ] || [ "${version}" != "${const}" ] || [ "${version}" != "${card}" ]; then
+            echo "::error::Release ${version} does not match manifest/const/card versions"
+            exit 1
+          fi
+          {
+            echo "VERSION=${version}"
+            echo "TAG=v${version}"
+          } >> "${GITHUB_ENV}"
       - name: Extract release notes from CHANGELOG.md
         run: |
           set -euo pipefail
@@ -53,8 +70,13 @@ jobs:
       - name: Create release
         env:
           GH_TOKEN: ${{ github.token }}
-          TAG: ${{ github.ref_name }}
         run: |
           set -euo pipefail
-          gh release create "${TAG}" --repo "${GITHUB_REPOSITORY}" --verify-tag \
+          if gh release view "${TAG}" --repo "${GITHUB_REPOSITORY}" > /dev/null 2>&1; then
+            echo "::error::Release ${TAG} already exists. Bump the version for a new release."
+            exit 1
+          fi
+          # On a tag push the tag already exists at GITHUB_SHA; on a manual run
+          # gh creates it there.
+          gh release create "${TAG}" --repo "${GITHUB_REPOSITORY}" --target "${GITHUB_SHA}" \
             --title "Habit Log ${VERSION}" --notes-file notes.md

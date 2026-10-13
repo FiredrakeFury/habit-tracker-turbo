@@ -22,7 +22,7 @@ env:
 jobs:
   lint:
     name: Ruff
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04 # pinned: Playwright and hacs/action are tested on 24.04
     timeout-minutes: 10
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
@@ -36,7 +36,7 @@ jobs:
 
   pytest:
     name: pytest (HA ${{ matrix.ha }})
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04 # pinned: Playwright and hacs/action are tested on 24.04
     timeout-minutes: 20
     strategy:
       fail-fast: false
@@ -63,7 +63,7 @@ jobs:
 
   card:
     name: Card (browser)
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04 # pinned: Playwright and hacs/action are tested on 24.04
     timeout-minutes: 20
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1

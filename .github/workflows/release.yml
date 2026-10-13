@@ -1,0 +1,60 @@
+name: Release
+
+on:
+  push:
+    tags: ["v*"]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: release-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  tests:
+    uses: ./.github/workflows/tests.yml
+
+  release:
+    name: Publish GitHub release
+    needs: tests
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: Check tag matches every version string
+        env:
+          TAG: ${{ github.ref_name }}
+        run: |
+          set -euo pipefail
+          version="${TAG#v}"
+          manifest=$(python3 -c 'import json; print(json.load(open("custom_components/habit_log/manifest.json"))["version"])')
+          const=$(sed -nE 's/^VERSION: Final = "([^"]+)"$/\1/p' custom_components/habit_log/const.py)
+          card=$(sed -nE 's/^ *const VERSION = "([^"]+)";$/\1/p' custom_components/habit_log/www/habit-log-card.js)
+          echo "tag=${version} manifest=${manifest} const=${const} card=${card}"
+          if [ "${version}" != "${manifest}" ] || [ "${version}" != "${const}" ] || [ "${version}" != "${card}" ]; then
+            echo "::error::Tag ${TAG} does not match manifest/const/card versions"
+            exit 1
+          fi
+          echo "VERSION=${version}" >> "${GITHUB_ENV}"
+      - name: Extract release notes from CHANGELOG.md
+        run: |
+          set -euo pipefail
+          awk -v v="## ${VERSION}" '$0 == v {found=1; next} found && /^## / {exit} found {print}' CHANGELOG.md > notes.md
+          if [ ! -s notes.md ]; then
+            echo "::error::CHANGELOG.md has no '## ${VERSION}' section"
+            exit 1
+          fi
+          cat notes.md
+      - name: Create release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG: ${{ github.ref_name }}
+        run: |
+          set -euo pipefail
+          gh release create "${TAG}" --repo "${GITHUB_REPOSITORY}" --verify-tag \
+            --title "Habit Log ${VERSION}" --notes-file notes.md

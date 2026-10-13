@@ -1,0 +1,89 @@
+{
+  "entity": {
+    "sensor": {
+      "count_week": {
+        "default": "mdi:counter"
+      },
+      "count_month": {
+        "default": "mdi:counter"
+      },
+      "count_year": {
+        "default": "mdi:counter"
+      },
+      "count_total": {
+        "default": "mdi:sigma"
+      },
+      "days_week": {
+        "default": "mdi:calendar-week"
+      },
+      "days_month": {
+        "default": "mdi:calendar-month"
+      },
+      "days_year": {
+        "default": "mdi:calendar-range"
+      },
+      "days_total": {
+        "default": "mdi:sigma"
+      },
+      "time_week": {
+        "default": "mdi:timer-outline"
+      },
+      "time_month": {
+        "default": "mdi:timer-outline"
+      },
+      "time_year": {
+        "default": "mdi:timer-outline"
+      },
+      "time_total": {
+        "default": "mdi:timer-sand-complete"
+      },
+      "current_streak": {
+        "default": "mdi:fire"
+      },
+      "best_streak": {
+        "default": "mdi:trophy-outline"
+      },
+      "last_logged": {
+        "default": "mdi:calendar-check"
+      },
+      "count_since_reset": {
+        "default": "mdi:counter"
+      },
+      "time_since_reset": {
+        "default": "mdi:timer-refresh-outline"
+      }
+    }
+  },
+  "services": {
+    "log": {
+      "service": "mdi:check-circle-outline"
+    },
+    "backfill": {
+      "service": "mdi:calendar-import"
+    },
+    "update_entry": {
+      "service": "mdi:pencil"
+    },
+    "delete_entry": {
+      "service": "mdi:delete-outline"
+    },
+    "merge_habits": {
+      "service": "mdi:call-merge"
+    },
+    "list_entries": {
+      "service": "mdi:format-list-bulleted"
+    },
+    "journal": {
+      "service": "mdi:notebook-edit-outline"
+    },
+    "update_journal_entry": {
+      "service": "mdi:notebook-edit"
+    },
+    "reset_counter": {
+      "service": "mdi:restart"
+    },
+    "undo_reset": {
+      "service": "mdi:undo"
+    }
+  }
+}

@@ -1,0 +1,3900 @@
+{
+ "config": {
+  "habits": [
+   {
+    "id": "h_diet",
+    "name": "Diet",
+    "emoji": "🥗",
+    "color": "#43a047",
+    "kind": "streak",
+    "track_time": false,
+    "order": 0,
+    "archived": false,
+    "last_reset": null
+   },
+   {
+    "id": "h_read",
+    "name": "Reading",
+    "emoji": "📖",
+    "color": null,
+    "kind": "counter",
+    "track_time": true,
+    "order": 0,
+    "archived": false,
+    "last_reset": "2026-10-04T16:00:00+00:00"
+   },
+   {
+    "id": "h_run",
+    "name": "Run",
+    "emoji": "🏃",
+    "color": null,
+    "kind": "counter",
+    "track_time": false,
+    "order": 0,
+    "archived": false,
+    "last_reset": null
+   },
+   {
+    "id": "h_sugar",
+    "name": "No sugar",
+    "emoji": "🍬",
+    "color": "#7b4fd6",
+    "kind": "streak",
+    "track_time": false,
+    "order": 1,
+    "archived": false,
+    "last_reset": null
+   }
+  ],
+  "journal_fields": [
+   {
+    "id": "f_alcohol",
+    "name": "Alcohol",
+    "field_type": "boolean",
+    "unit": null,
+    "min": null,
+    "max": null,
+    "step": null,
+    "options": [],
+    "multiline": false,
+    "create_sensor": false,
+    "order": 0,
+    "active": true
+   },
+   {
+    "id": "f_energy",
+    "name": "Energy",
+    "field_type": "rating",
+    "unit": null,
+    "min": 1.0,
+    "max": 5.0,
+    "step": null,
+    "options": [],
+    "multiline": false,
+    "create_sensor": true,
+    "order": 0,
+    "active": true
+   },
+   {
+    "id": "f_notes",
+    "name": "Notes",
+    "field_type": "text",
+    "unit": null,
+    "min": null,
+    "max": null,
+    "step": null,
+    "options": [],
+    "multiline": false,
+    "create_sensor": false,
+    "order": 0,
+    "active": true
+   },
+   {
+    "id": "f_weight",
+    "name": "Weight",
+    "field_type": "number",
+    "unit": "kg",
+    "min": 20.0,
+    "max": 300.0,
+    "step": 0.1,
+    "options": [],
+    "multiline": false,
+    "create_sensor": true,
+    "order": 0,
+    "active": true
+   },
+   {
+    "id": "f_workout",
+    "name": "Workout",
+    "field_type": "select",
+    "unit": null,
+    "min": null,
+    "max": null,
+    "step": null,
+    "options": [
+     "Great",
+     "Good",
+     "Poor"
+    ],
+    "multiline": false,
+    "create_sensor": false,
+    "order": 0,
+    "active": true
+   }
+  ],
+  "week_start": "monday",
+  "time_zone": "America/New_York",
+  "today": "2026-10-07",
+  "now_local": "2026-10-07T14:05:00",
+  "today_summary": {
+   "h_diet": {
+    "count": 1,
+    "seconds": 0,
+    "active": true
+   },
+   "h_run": {
+    "count": 0,
+    "seconds": 0,
+    "active": false
+   },
+   "h_read": {
+    "count": 1,
+    "seconds": 1500.0,
+    "active": true
+   },
+   "h_sugar": {
+    "count": 0,
+    "seconds": 0,
+    "active": false
+   }
+  },
+  "version": "0.3.0"
+ },
+ "entries": {
+  "entries": [
+   {
+    "id": "01M4VJH9RTEDQFNC0KZHFCTYXS",
+    "habit_id": "h_diet",
+    "day": "2026-09-28",
+    "start": null,
+    "end": null,
+    "notes": "",
+    "created": "2026-10-07T18:05:00+00:00",
+    "updated": "2026-10-07T18:05:00+00:00",
+    "user_id": null,
+    "count_day": "2026-09-28",
+    "days": [
+     "2026-09-28"
+    ]
+   },
+   {
+    "id": "01M4VJH9RTY21JDZFJV8XHDZ7E",
+    "habit_id": "h_diet",
+    "day": "2026-09-29",
+    "start": null,
+    "end": null,
+    "notes": "",
+    "created": "2026-10-07T18:05:00+00:00",
+    "updated": "2026-10-07T18:05:00+00:00",
+    "user_id": null,
+    "count_day": "2026-09-29",
+    "days": [
+     "2026-09-29"
+    ]
+   },
+   {
+    "id": "01M4VJH9RXVAHA1N0TN93589KJ",
+    "habit_id": "h_run",
+    "day": "2026-09-29",
+    "start": null,
+    "end": null,
+    "notes": "",
+    "created": "2026-10-07T18:05:00+00:00",
+    "updated": "2026-10-07T18:05:00+00:00",
+    "user_id": null,
+    "count_day": "2026-09-29",
+    "days": [
+     "2026-09-29"
+    ]
+   },
+   {
+    "id": "01M4VJH9RTCJEQGJAQ0BNXDEZY",
+    "habit_id": "h_diet",
+    "day": "2026-09-30",
+    "start": null,
+    "end": null,
+    "notes": "",
+    "created": "2026-10-07T18:05:00+00:00",
+    "updated": "2026-10-07T18:05:00+00:00",
+    "user_id": null,
+    "count_day": "2026-09-30",
+    "days": [
+     "2026-09-30"
+    ]
+   },
+   {
+    "id": "01M4VJH9SGZQW2RKPQYZ87FB9H",
+    "habit_id": "h_sugar",
+    "day": "2026-09-30",
+    "start": null,
+    "end": null,
+    "notes": "",
+    "created": "2026-10-07T18:05:00+00:00",
+    "updated": "2026-10-07T18:05:00+00:00",
+    "user_id": null,
+    "count_day": "2026-09-30",
+    "days": [
+     "2026-09-30"
+    ]
+   },
+   {
+    "id": "01M4VJH9RT3EQ6S330EYY2JFWW",
+    "habit_id": "h_diet",
+    "day": "2026-10-01",
+    "start": null,
+    "end": null,
+    "notes": "",
+    "created": "2026-10-07T18:05:00+00:00",
+    "updated": "2026-10-07T18:05:00+00:00",
+    "user_id": null,
+    "count_day": "2026-10-01",
+    "days": [
+     "2026-10-01"
+    ]
+   },
+   {
+    "id": "01M4VJH9S0HSEB646HASCQYDDX",
+    "habit_id": "h_run",
+    "day": "2026-10-01",
+    "start": null,
+    "end": null,
+    "notes": "",
+    "created": "2026-10-07T18:05:00+00:00",
+    "updated": "2026-10-07T18:05:00+00:00",
+    "user_id": null,
+    "count_day": "2026-10-01",
+    "days": [
+     "2026-10-01"
+    ]
+   },
+   {
+    "id": "01M4VJH9S2YPR2A9GDJNGF5420",
+    "habit_id": "h_run",
+    "day": "2026-10-01",
+    "start": null,
+    "end": null,
+    "notes": "",
+    "created": "2026-10-07T18:05:00+00:00",
+    "updated": "2026-10-07T18:05:00+00:00",
+    "user_id": null,
+    "count_day": "2026-10-01",
+    "days": [
+     "2026-10-01"
+    ]
+   },
+   {
+    "id": "01M4VJH9SGWNQWCPNHDY2S720W",
+    "habit_id": "h_sugar",
+    "day": "2026-10-01",
+    "start": null,
+    "end": null,
+    "notes": "",
+    "created": "2026-10-07T18:05:00+00:00",
+    "updated": "2026-10-07T18:05:00+00:00",
+    "user_id": null,
+    "count_day": "2026-10-01",
+    "days": [
+     "2026-10-01"
+    ]
+   },
+   {
+    "id": "01M4VJH9RTQ61KTK2QE8ETNAXC",
+    "habit_id": "h_diet",
+    "day": "2026-10-02",
+    "start": null,
+    "end": null,
+    "notes": "",
+    "created": "2026-10-07T18:05:00+00:00",
+    "updated": "2026-10-07T18:05:00+00:00",
+    "user_id": null,
+    "count_day": "2026-10-02",
+    "days": [
+     "2026-10-02"
+    ]
+   },
+   {
+    "id": "01M4VJH9SA7M8QHJTNYTA1KD8T",
+    "habit_id": "h_read",
+    "day": null,
+    "start": "2026-10-02T23:00:00+00:00",
+    "end": "2026-10-02T23:50:00+00:00",
+    "notes": "",
+    "created": "2026-10-07T18:05:00+00:00",
+    "updated": "2026-10-07T18:05:00+00:00",
+    "user_id": null,
+    "count_day": "2026-10-02",
+    "days": [
+     "2026-10-02"
+    ],
+    "start_local": "2026-10-02T19:00:00",
+    "end_local": "2026-10-02T19:50:00",
+    "seconds": 3000.0
+   },
+   {
+    "id": "01M4VJH9S4ZX5JJJVSRFVCV7TK",
+    "habit_id": "h_run",
+    "day": "2026-10-03",
+    "start": null,
+    "end": null,
+    "notes": "",
+    "created": "2026-10-07T18:05:00+00:00",
+    "updated": "2026-10-07T18:05:00+00:00",
+    "user_id": null,
+    "count_day": "2026-10-03",
+    "days": [
+     "2026-10-03"
+    ]
+   },
+   {
+    "id": "01M4VJH9SGYXNWH1VTZ6RHGJJ1",
+    "habit_id": "h_sugar",
+    "day": "2026-10-03",
+    "start": null,
+    "end": null,
+    "notes": "",
+    "created": "2026-10-07T18:05:00+00:00",
+    "updated": "2026-10-07T18:05:00+00:00",
+    "user_id": null,
+    "count_day": "2026-10-03",
+    "days": [
+     "2026-10-03"
+    ]
+   },
+   {
+    "id": "01M4VJH9RVBN2RBJXTYX5R8J3R",
+    "habit_id": "h_diet",
+    "day": "2026-10-04",
+    "start": null,
+    "end": null,
+    "notes": "",
+    "created": "2026-10-07T18:05:00+00:00",
+    "updated": "2026-10-07T18:05:00+00:00",
+    "user_id": null,
+    "count_day": "2026-10-04",
+    "days": [
+     "2026-10-04"
+    ]
+   },
+   {
+    "id": "01M4VJH9SG96JBTDBX85VAR75Q",
+    "habit_id": "h_sugar",
+    "day": "2026-10-04",
+    "start": null,
+    "end": null,
+    "notes": "",
+    "created": "2026-10-07T18:05:00+00:00",
+    "updated": "2026-10-07T18:05:00+00:00",
+    "user_id": null,
+    "count_day": "2026-10-04",
+    "days": [
+     "2026-10-04"
+    ]
+   },
+   {
+    "id": "01M4VJH9RVJCKPKJ2B78JBFNJM",
+    "habit_id": "h_diet",
+    "day": "2026-10-05",
+    "start": null,
+    "end": null,
+    "notes": "",
+    "created": "2026-10-07T18:05:00+00:00",
+    "updated": "2026-10-07T18:05:00+00:00",
+    "user_id": null,
+    "count_day": "2026-10-05",
+    "days": [
+     "2026-10-05"
+    ]
+   },
+   {
+    "id": "01M4VJH9SGFFWCENY4HMCYTS4Y",
+    "habit_id": "h_sugar",
+    "day": "2026-10-05",
+    "start": null,
+    "end": null,
+    "notes": "",
+    "created": "2026-10-07T18:05:00+00:00",
+    "updated": "2026-10-07T18:05:00+00:00",
+    "user_id": null,
+    "count_day": "2026-10-05",
+    "days": [
+     "2026-10-05"
+    ]
+   },
+   {
+    "id": "01M4VJH9S7RJP0W5672XQTWQFM",
+    "habit_id": "h_read",
+    "day": null,
+    "start": "2026-10-06T02:30:00+00:00",
+    "end": "2026-10-06T04:45:00+00:00",
+    "notes": "Finished part two",
+    "created": "2026-10-07T18:05:00+00:00",
+    "updated": "2026-10-07T18:05:00+00:00",
+    "user_id": null,
+    "count_day": "2026-10-05",
+    "days": [
+     "2026-10-05",
+     "2026-10-06"
+    ],
+    "start_local": "2026-10-05T22:30:00",
+    "end_local": "2026-10-06T00:45:00",
+    "seconds": 8100.0
+   },
+   {
+    "id": "01M4VJH9RVMD3FC7T0XFSHE30K",
+    "habit_id": "h_diet",
+    "day": "2026-10-06",
+    "start": null,
+    "end": null,
+    "notes": "",
+    "created": "2026-10-07T18:05:00+00:00",
+    "updated": "2026-10-07T18:05:00+00:00",
+    "user_id": null,
+    "count_day": "2026-10-06",
+    "days": [
+     "2026-10-06"
+    ]
+   },
+   {
+    "id": "01M4VJH9S5RGKFAF0RKXA76V6M",
+    "habit_id": "h_run",
+    "day": "2026-10-06",
+    "start": null,
+    "end": null,
+    "notes": "Park loop, easy pace",
+    "created": "2026-10-07T18:05:00+00:00",
+    "updated": "2026-10-07T18:05:00+00:00",
+    "user_id": null,
+    "count_day": "2026-10-06",
+    "days": [
+     "2026-10-06"
+    ]
+   },
+   {
+    "id": "01M4VJH9SG2ED7C12X066PE30M",
+    "habit_id": "h_sugar",
+    "day": "2026-10-06",
+    "start": null,
+    "end": null,
+    "notes": "",
+    "created": "2026-10-07T18:05:00+00:00",
+    "updated": "2026-10-07T18:05:00+00:00",
+    "user_id": null,
+    "count_day": "2026-10-06",
+    "days": [
+     "2026-10-06"
+    ]
+   },
+   {
+    "id": "01M4VJH9RVZG7HFW1P8E50T8JZ",
+    "habit_id": "h_diet",
+    "day": "2026-10-07",
+    "start": null,
+    "end": null,
+    "notes": "",
+    "created": "2026-10-07T18:05:00+00:00",
+    "updated": "2026-10-07T18:05:00+00:00",
+    "user_id": null,
+    "count_day": "2026-10-07",
+    "days": [
+     "2026-10-07"
+    ]
+   },
+   {
+    "id": "01M4VJH9SCN81Y1RS64X5DWK30",
+    "habit_id": "h_read",
+    "day": null,
+    "start": "2026-10-07T11:15:00+00:00",
+    "end": "2026-10-07T11:40:00+00:00",
+    "notes": "",
+    "created": "2026-10-07T18:05:00+00:00",
+    "updated": "2026-10-07T18:05:00+00:00",
+    "user_id": null,
+    "count_day": "2026-10-07",
+    "days": [
+     "2026-10-07"
+    ],
+    "start_local": "2026-10-07T07:15:00",
+    "end_local": "2026-10-07T07:40:00",
+    "seconds": 1500.0
+   }
+  ],
+  "journal": [
+   {
+    "id": "01M4VJH9SJZHHM2WFJFRS4FF3S",
+    "day": "2026-10-03",
+    "values": [
+     {
+      "field_id": "f_energy",
+      "label": "Energy",
+      "field_type": "rating",
+      "unit": null,
+      "value": 2
+     },
+     {
+      "field_id": "f_workout",
+      "label": "Workout",
+      "field_type": "select",
+      "unit": null,
+      "value": "Poor"
+     }
+    ],
+    "created": "2026-10-07T18:05:00+00:00",
+    "updated": "2026-10-07T18:05:00+00:00",
+    "user_id": null
+   },
+   {
+    "id": "01M4VJH9SE5ZWPQQHSPVX65036",
+    "day": "2026-10-06",
+    "values": [
+     {
+      "field_id": "f_alcohol",
+      "label": "Alcohol",
+      "field_type": "boolean",
+      "unit": null,
+      "value": false
+     },
+     {
+      "field_id": "f_energy",
+      "label": "Energy",
+      "field_type": "rating",
+      "unit": null,
+      "value": 4
+     },
+     {
+      "field_id": "f_notes",
+      "label": "Notes",
+      "field_type": "text",
+      "unit": null,
+      "value": "Slept well.\nLegs a bit sore."
+     },
+     {
+      "field_id": "f_weight",
+      "label": "Weight",
+      "field_type": "number",
+      "unit": "kg",
+      "value": 81.4
+     },
+     {
+      "field_id": "f_workout",
+      "label": "Workout",
+      "field_type": "select",
+      "unit": null,
+      "value": "Good"
+     }
+    ],
+    "created": "2026-10-07T18:05:00+00:00",
+    "updated": "2026-10-07T18:05:00+00:00",
+    "user_id": null
+   }
+  ]
+ },
+ "stats": {
+  "h_diet:week:0": {
+   "habit_id": "h_diet",
+   "summary": {
+    "period": "week",
+    "start": "2026-10-05",
+    "end": "2026-10-12",
+    "count": 3,
+    "seconds": 0,
+    "active_days": 3,
+    "best_streak_in_period": 3,
+    "current_streak": 4,
+    "best_streak": 11,
+    "first_day": "2026-09-22",
+    "last_day": "2026-10-07"
+   },
+   "buckets": [
+    {
+     "key": "2026-10-05",
+     "start": "2026-10-05",
+     "end": "2026-10-06",
+     "count": 1,
+     "seconds": 0,
+     "active_days": 1
+    },
+    {
+     "key": "2026-10-06",
+     "start": "2026-10-06",
+     "end": "2026-10-07",
+     "count": 1,
+     "seconds": 0,
+     "active_days": 1
+    },
+    {
+     "key": "2026-10-07",
+     "start": "2026-10-07",
+     "end": "2026-10-08",
+     "count": 1,
+     "seconds": 0,
+     "active_days": 1
+    },
+    {
+     "key": "2026-10-08",
+     "start": "2026-10-08",
+     "end": "2026-10-09",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-10-09",
+     "start": "2026-10-09",
+     "end": "2026-10-10",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-10-10",
+     "start": "2026-10-10",
+     "end": "2026-10-11",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-10-11",
+     "start": "2026-10-11",
+     "end": "2026-10-12",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    }
+   ],
+   "since_reset": null
+  },
+  "h_diet:month:0": {
+   "habit_id": "h_diet",
+   "summary": {
+    "period": "month",
+    "start": "2026-10-01",
+    "end": "2026-11-01",
+    "count": 6,
+    "seconds": 0,
+    "active_days": 6,
+    "best_streak_in_period": 4,
+    "current_streak": 4,
+    "best_streak": 11,
+    "first_day": "2026-09-22",
+    "last_day": "2026-10-07"
+   },
+   "buckets": [
+    {
+     "key": "2026-10-01",
+     "start": "2026-10-01",
+     "end": "2026-10-02",
+     "count": 1,
+     "seconds": 0,
+     "active_days": 1
+    },
+    {
+     "key": "2026-10-02",
+     "start": "2026-10-02",
+     "end": "2026-10-03",
+     "count": 1,
+     "seconds": 0,
+     "active_days": 1
+    },
+    {
+     "key": "2026-10-03",
+     "start": "2026-10-03",
+     "end": "2026-10-04",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-10-04",
+     "start": "2026-10-04",
+     "end": "2026-10-05",
+     "count": 1,
+     "seconds": 0,
+     "active_days": 1
+    },
+    {
+     "key": "2026-10-05",
+     "start": "2026-10-05",
+     "end": "2026-10-06",
+     "count": 1,
+     "seconds": 0,
+     "active_days": 1
+    },
+    {
+     "key": "2026-10-06",
+     "start": "2026-10-06",
+     "end": "2026-10-07",
+     "count": 1,
+     "seconds": 0,
+     "active_days": 1
+    },
+    {
+     "key": "2026-10-07",
+     "start": "2026-10-07",
+     "end": "2026-10-08",
+     "count": 1,
+     "seconds": 0,
+     "active_days": 1
+    },
+    {
+     "key": "2026-10-08",
+     "start": "2026-10-08",
+     "end": "2026-10-09",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-10-09",
+     "start": "2026-10-09",
+     "end": "2026-10-10",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-10-10",
+     "start": "2026-10-10",
+     "end": "2026-10-11",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-10-11",
+     "start": "2026-10-11",
+     "end": "2026-10-12",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-10-12",
+     "start": "2026-10-12",
+     "end": "2026-10-13",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-10-13",
+     "start": "2026-10-13",
+     "end": "2026-10-14",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-10-14",
+     "start": "2026-10-14",
+     "end": "2026-10-15",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-10-15",
+     "start": "2026-10-15",
+     "end": "2026-10-16",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-10-16",
+     "start": "2026-10-16",
+     "end": "2026-10-17",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-10-17",
+     "start": "2026-10-17",
+     "end": "2026-10-18",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-10-18",
+     "start": "2026-10-18",
+     "end": "2026-10-19",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-10-19",
+     "start": "2026-10-19",
+     "end": "2026-10-20",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-10-20",
+     "start": "2026-10-20",
+     "end": "2026-10-21",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-10-21",
+     "start": "2026-10-21",
+     "end": "2026-10-22",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-10-22",
+     "start": "2026-10-22",
+     "end": "2026-10-23",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-10-23",
+     "start": "2026-10-23",
+     "end": "2026-10-24",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-10-24",
+     "start": "2026-10-24",
+     "end": "2026-10-25",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-10-25",
+     "start": "2026-10-25",
+     "end": "2026-10-26",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-10-26",
+     "start": "2026-10-26",
+     "end": "2026-10-27",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-10-27",
+     "start": "2026-10-27",
+     "end": "2026-10-28",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-10-28",
+     "start": "2026-10-28",
+     "end": "2026-10-29",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-10-29",
+     "start": "2026-10-29",
+     "end": "2026-10-30",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-10-30",
+     "start": "2026-10-30",
+     "end": "2026-10-31",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-10-31",
+     "start": "2026-10-31",
+     "end": "2026-11-01",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    }
+   ],
+   "since_reset": null
+  },
+  "h_diet:year:0": {
+   "habit_id": "h_diet",
+   "summary": {
+    "period": "year",
+    "start": "2026-01-01",
+    "end": "2027-01-01",
+    "count": 15,
+    "seconds": 0,
+    "active_days": 15,
+    "best_streak_in_period": 11,
+    "current_streak": 4,
+    "best_streak": 11,
+    "first_day": "2026-09-22",
+    "last_day": "2026-10-07"
+   },
+   "buckets": [
+    {
+     "key": "2026-01",
+     "start": "2026-01-01",
+     "end": "2026-02-01",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-02",
+     "start": "2026-02-01",
+     "end": "2026-03-01",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-03",
+     "start": "2026-03-01",
+     "end": "2026-04-01",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-04",
+     "start": "2026-04-01",
+     "end": "2026-05-01",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-05",
+     "start": "2026-05-01",
+     "end": "2026-06-01",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-06",
+     "start": "2026-06-01",
+     "end": "2026-07-01",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-07",
+     "start": "2026-07-01",
+     "end": "2026-08-01",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-08",
+     "start": "2026-08-01",
+     "end": "2026-09-01",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-09",
+     "start": "2026-09-01",
+     "end": "2026-10-01",
+     "count": 9,
+     "seconds": 0,
+     "active_days": 9
+    },
+    {
+     "key": "2026-10",
+     "start": "2026-10-01",
+     "end": "2026-11-01",
+     "count": 6,
+     "seconds": 0,
+     "active_days": 6
+    },
+    {
+     "key": "2026-11",
+     "start": "2026-11-01",
+     "end": "2026-12-01",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-12",
+     "start": "2026-12-01",
+     "end": "2027-01-01",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    }
+   ],
+   "since_reset": null
+  },
+  "h_diet:all:0": {
+   "habit_id": "h_diet",
+   "summary": {
+    "period": "all",
+    "start": null,
+    "end": null,
+    "count": 15,
+    "seconds": 0,
+    "active_days": 15,
+    "best_streak_in_period": 11,
+    "current_streak": 4,
+    "best_streak": 11,
+    "first_day": "2026-09-22",
+    "last_day": "2026-10-07"
+   },
+   "buckets": [
+    {
+     "key": "2026",
+     "start": "2026-01-01",
+     "end": "2027-01-01",
+     "count": 15,
+     "seconds": 0,
+     "active_days": 15
+    }
+   ],
+   "since_reset": null
+  },
+  "h_diet:month:-1": {
+   "habit_id": "h_diet",
+   "summary": {
+    "period": "month",
+    "start": "2026-09-01",
+    "end": "2026-10-01",
+    "count": 9,
+    "seconds": 0,
+    "active_days": 9,
+    "best_streak_in_period": 9,
+    "current_streak": 4,
+    "best_streak": 11,
+    "first_day": "2026-09-22",
+    "last_day": "2026-10-07"
+   },
+   "buckets": [
+    {
+     "key": "2026-09-01",
+     "start": "2026-09-01",
+     "end": "2026-09-02",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-09-02",
+     "start": "2026-09-02",
+     "end": "2026-09-03",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-09-03",
+     "start": "2026-09-03",
+     "end": "2026-09-04",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-09-04",
+     "start": "2026-09-04",
+     "end": "2026-09-05",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-09-05",
+     "start": "2026-09-05",
+     "end": "2026-09-06",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-09-06",
+     "start": "2026-09-06",
+     "end": "2026-09-07",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-09-07",
+     "start": "2026-09-07",
+     "end": "2026-09-08",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-09-08",
+     "start": "2026-09-08",
+     "end": "2026-09-09",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-09-09",
+     "start": "2026-09-09",
+     "end": "2026-09-10",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-09-10",
+     "start": "2026-09-10",
+     "end": "2026-09-11",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-09-11",
+     "start": "2026-09-11",
+     "end": "2026-09-12",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-09-12",
+     "start": "2026-09-12",
+     "end": "2026-09-13",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-09-13",
+     "start": "2026-09-13",
+     "end": "2026-09-14",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-09-14",
+     "start": "2026-09-14",
+     "end": "2026-09-15",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-09-15",
+     "start": "2026-09-15",
+     "end": "2026-09-16",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-09-16",
+     "start": "2026-09-16",
+     "end": "2026-09-17",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-09-17",
+     "start": "2026-09-17",
+     "end": "2026-09-18",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-09-18",
+     "start": "2026-09-18",
+     "end": "2026-09-19",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-09-19",
+     "start": "2026-09-19",
+     "end": "2026-09-20",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-09-20",
+     "start": "2026-09-20",
+     "end": "2026-09-21",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-09-21",
+     "start": "2026-09-21",
+     "end": "2026-09-22",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-09-22",
+     "start": "2026-09-22",
+     "end": "2026-09-23",
+     "count": 1,
+     "seconds": 0,
+     "active_days": 1
+    },
+    {
+     "key": "2026-09-23",
+     "start": "2026-09-23",
+     "end": "2026-09-24",
+     "count": 1,
+     "seconds": 0,
+     "active_days": 1
+    },
+    {
+     "key": "2026-09-24",
+     "start": "2026-09-24",
+     "end": "2026-09-25",
+     "count": 1,
+     "seconds": 0,
+     "active_days": 1
+    },
+    {
+     "key": "2026-09-25",
+     "start": "2026-09-25",
+     "end": "2026-09-26",
+     "count": 1,
+     "seconds": 0,
+     "active_days": 1
+    },
+    {
+     "key": "2026-09-26",
+     "start": "2026-09-26",
+     "end": "2026-09-27",
+     "count": 1,
+     "seconds": 0,
+     "active_days": 1
+    },
+    {
+     "key": "2026-09-27",
+     "start": "2026-09-27",
+     "end": "2026-09-28",
+     "count": 1,
+     "seconds": 0,
+     "active_days": 1
+    },
+    {
+     "key": "2026-09-28",
+     "start": "2026-09-28",
+     "end": "2026-09-29",
+     "count": 1,
+     "seconds": 0,
+     "active_days": 1
+    },
+    {
+     "key": "2026-09-29",
+     "start": "2026-09-29",
+     "end": "2026-09-30",
+     "count": 1,
+     "seconds": 0,
+     "active_days": 1
+    },
+    {
+     "key": "2026-09-30",
+     "start": "2026-09-30",
+     "end": "2026-10-01",
+     "count": 1,
+     "seconds": 0,
+     "active_days": 1
+    }
+   ],
+   "since_reset": null
+  },
+  "h_run:week:0": {
+   "habit_id": "h_run",
+   "summary": {
+    "period": "week",
+    "start": "2026-10-05",
+    "end": "2026-10-12",
+    "count": 1,
+    "seconds": 0,
+    "active_days": 1,
+    "best_streak_in_period": 1,
+    "current_streak": 1,
+    "best_streak": 1,
+    "first_day": "2026-09-29",
+    "last_day": "2026-10-06"
+   },
+   "buckets": [
+    {
+     "key": "2026-10-05",
+     "start": "2026-10-05",
+     "end": "2026-10-06",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-10-06",
+     "start": "2026-10-06",
+     "end": "2026-10-07",
+     "count": 1,
+     "seconds": 0,
+     "active_days": 1
+    },
+    {
+     "key": "2026-10-07",
+     "start": "2026-10-07",
+     "end": "2026-10-08",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-10-08",
+     "start": "2026-10-08",
+     "end": "2026-10-09",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-10-09",
+     "start": "2026-10-09",
+     "end": "2026-10-10",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-10-10",
+     "start": "2026-10-10",
+     "end": "2026-10-11",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-10-11",
+     "start": "2026-10-11",
+     "end": "2026-10-12",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    }
+   ],
+   "since_reset": {
+    "reset_at": null,
+    "count": 5,
+    "seconds": 0.0,
+    "active_days": 4,
+    "resets": 0,
+    "all_time": {
+     "count": 5,
+     "seconds": 0,
+     "active_days": 4
+    }
+   }
+  },
+  "h_run:month:0": {
+   "habit_id": "h_run",
+   "summary": {
+    "period": "month",
+    "start": "2026-10-01",
+    "end": "2026-11-01",
+    "count": 4,
+    "seconds": 0,
+    "active_days": 3,
+    "best_streak_in_period": 1,
+    "current_streak": 1,
+    "best_streak": 1,
+    "first_day": "2026-09-29",
+    "last_day": "2026-10-06"
+   },
+   "buckets": [
+    {
+     "key": "2026-10-01",
+     "start": "2026-10-01",
+     "end": "2026-10-02",
+     "count": 2,
+     "seconds": 0,
+     "active_days": 1
+    },
+    {
+     "key": "2026-10-02",
+     "start": "2026-10-02",
+     "end": "2026-10-03",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-10-03",
+     "start": "2026-10-03",
+     "end": "2026-10-04",
+     "count": 1,
+     "seconds": 0,
+     "active_days": 1
+    },
+    {
+     "key": "2026-10-04",
+     "start": "2026-10-04",
+     "end": "2026-10-05",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-10-05",
+     "start": "2026-10-05",
+     "end": "2026-10-06",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-10-06",
+     "start": "2026-10-06",
+     "end": "2026-10-07",
+     "count": 1,
+     "seconds": 0,
+     "active_days": 1
+    },
+    {
+     "key": "2026-10-07",
+     "start": "2026-10-07",
+     "end": "2026-10-08",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-10-08",
+     "start": "2026-10-08",
+     "end": "2026-10-09",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-10-09",
+     "start": "2026-10-09",
+     "end": "2026-10-10",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-10-10",
+     "start": "2026-10-10",
+     "end": "2026-10-11",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-10-11",
+     "start": "2026-10-11",
+     "end": "2026-10-12",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-10-12",
+     "start": "2026-10-12",
+     "end": "2026-10-13",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-10-13",
+     "start": "2026-10-13",
+     "end": "2026-10-14",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-10-14",
+     "start": "2026-10-14",
+     "end": "2026-10-15",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-10-15",
+     "start": "2026-10-15",
+     "end": "2026-10-16",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-10-16",
+     "start": "2026-10-16",
+     "end": "2026-10-17",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-10-17",
+     "start": "2026-10-17",
+     "end": "2026-10-18",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-10-18",
+     "start": "2026-10-18",
+     "end": "2026-10-19",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-10-19",
+     "start": "2026-10-19",
+     "end": "2026-10-20",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-10-20",
+     "start": "2026-10-20",
+     "end": "2026-10-21",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-10-21",
+     "start": "2026-10-21",
+     "end": "2026-10-22",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-10-22",
+     "start": "2026-10-22",
+     "end": "2026-10-23",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-10-23",
+     "start": "2026-10-23",
+     "end": "2026-10-24",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-10-24",
+     "start": "2026-10-24",
+     "end": "2026-10-25",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-10-25",
+     "start": "2026-10-25",
+     "end": "2026-10-26",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-10-26",
+     "start": "2026-10-26",
+     "end": "2026-10-27",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-10-27",
+     "start": "2026-10-27",
+     "end": "2026-10-28",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-10-28",
+     "start": "2026-10-28",
+     "end": "2026-10-29",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-10-29",
+     "start": "2026-10-29",
+     "end": "2026-10-30",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-10-30",
+     "start": "2026-10-30",
+     "end": "2026-10-31",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-10-31",
+     "start": "2026-10-31",
+     "end": "2026-11-01",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    }
+   ],
+   "since_reset": {
+    "reset_at": null,
+    "count": 5,
+    "seconds": 0.0,
+    "active_days": 4,
+    "resets": 0,
+    "all_time": {
+     "count": 5,
+     "seconds": 0,
+     "active_days": 4
+    }
+   }
+  },
+  "h_run:year:0": {
+   "habit_id": "h_run",
+   "summary": {
+    "period": "year",
+    "start": "2026-01-01",
+    "end": "2027-01-01",
+    "count": 5,
+    "seconds": 0,
+    "active_days": 4,
+    "best_streak_in_period": 1,
+    "current_streak": 1,
+    "best_streak": 1,
+    "first_day": "2026-09-29",
+    "last_day": "2026-10-06"
+   },
+   "buckets": [
+    {
+     "key": "2026-01",
+     "start": "2026-01-01",
+     "end": "2026-02-01",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-02",
+     "start": "2026-02-01",
+     "end": "2026-03-01",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-03",
+     "start": "2026-03-01",
+     "end": "2026-04-01",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-04",
+     "start": "2026-04-01",
+     "end": "2026-05-01",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-05",
+     "start": "2026-05-01",
+     "end": "2026-06-01",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-06",
+     "start": "2026-06-01",
+     "end": "2026-07-01",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-07",
+     "start": "2026-07-01",
+     "end": "2026-08-01",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-08",
+     "start": "2026-08-01",
+     "end": "2026-09-01",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-09",
+     "start": "2026-09-01",
+     "end": "2026-10-01",
+     "count": 1,
+     "seconds": 0,
+     "active_days": 1
+    },
+    {
+     "key": "2026-10",
+     "start": "2026-10-01",
+     "end": "2026-11-01",
+     "count": 4,
+     "seconds": 0,
+     "active_days": 3
+    },
+    {
+     "key": "2026-11",
+     "start": "2026-11-01",
+     "end": "2026-12-01",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-12",
+     "start": "2026-12-01",
+     "end": "2027-01-01",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    }
+   ],
+   "since_reset": {
+    "reset_at": null,
+    "count": 5,
+    "seconds": 0.0,
+    "active_days": 4,
+    "resets": 0,
+    "all_time": {
+     "count": 5,
+     "seconds": 0,
+     "active_days": 4
+    }
+   }
+  },
+  "h_run:all:0": {
+   "habit_id": "h_run",
+   "summary": {
+    "period": "all",
+    "start": null,
+    "end": null,
+    "count": 5,
+    "seconds": 0,
+    "active_days": 4,
+    "best_streak_in_period": 1,
+    "current_streak": 1,
+    "best_streak": 1,
+    "first_day": "2026-09-29",
+    "last_day": "2026-10-06"
+   },
+   "buckets": [
+    {
+     "key": "2026",
+     "start": "2026-01-01",
+     "end": "2027-01-01",
+     "count": 5,
+     "seconds": 0,
+     "active_days": 4
+    }
+   ],
+   "since_reset": {
+    "reset_at": null,
+    "count": 5,
+    "seconds": 0.0,
+    "active_days": 4,
+    "resets": 0,
+    "all_time": {
+     "count": 5,
+     "seconds": 0,
+     "active_days": 4
+    }
+   }
+  },
+  "h_run:month:-1": {
+   "habit_id": "h_run",
+   "summary": {
+    "period": "month",
+    "start": "2026-09-01",
+    "end": "2026-10-01",
+    "count": 1,
+    "seconds": 0,
+    "active_days": 1,
+    "best_streak_in_period": 1,
+    "current_streak": 1,
+    "best_streak": 1,
+    "first_day": "2026-09-29",
+    "last_day": "2026-10-06"
+   },
+   "buckets": [
+    {
+     "key": "2026-09-01",
+     "start": "2026-09-01",
+     "end": "2026-09-02",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-09-02",
+     "start": "2026-09-02",
+     "end": "2026-09-03",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-09-03",
+     "start": "2026-09-03",
+     "end": "2026-09-04",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-09-04",
+     "start": "2026-09-04",
+     "end": "2026-09-05",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-09-05",
+     "start": "2026-09-05",
+     "end": "2026-09-06",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-09-06",
+     "start": "2026-09-06",
+     "end": "2026-09-07",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-09-07",
+     "start": "2026-09-07",
+     "end": "2026-09-08",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-09-08",
+     "start": "2026-09-08",
+     "end": "2026-09-09",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-09-09",
+     "start": "2026-09-09",
+     "end": "2026-09-10",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-09-10",
+     "start": "2026-09-10",
+     "end": "2026-09-11",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-09-11",
+     "start": "2026-09-11",
+     "end": "2026-09-12",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-09-12",
+     "start": "2026-09-12",
+     "end": "2026-09-13",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-09-13",
+     "start": "2026-09-13",
+     "end": "2026-09-14",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-09-14",
+     "start": "2026-09-14",
+     "end": "2026-09-15",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-09-15",
+     "start": "2026-09-15",
+     "end": "2026-09-16",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-09-16",
+     "start": "2026-09-16",
+     "end": "2026-09-17",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-09-17",
+     "start": "2026-09-17",
+     "end": "2026-09-18",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-09-18",
+     "start": "2026-09-18",
+     "end": "2026-09-19",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-09-19",
+     "start": "2026-09-19",
+     "end": "2026-09-20",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-09-20",
+     "start": "2026-09-20",
+     "end": "2026-09-21",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-09-21",
+     "start": "2026-09-21",
+     "end": "2026-09-22",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-09-22",
+     "start": "2026-09-22",
+     "end": "2026-09-23",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-09-23",
+     "start": "2026-09-23",
+     "end": "2026-09-24",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-09-24",
+     "start": "2026-09-24",
+     "end": "2026-09-25",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-09-25",
+     "start": "2026-09-25",
+     "end": "2026-09-26",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-09-26",
+     "start": "2026-09-26",
+     "end": "2026-09-27",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-09-27",
+     "start": "2026-09-27",
+     "end": "2026-09-28",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-09-28",
+     "start": "2026-09-28",
+     "end": "2026-09-29",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-09-29",
+     "start": "2026-09-29",
+     "end": "2026-09-30",
+     "count": 1,
+     "seconds": 0,
+     "active_days": 1
+    },
+    {
+     "key": "2026-09-30",
+     "start": "2026-09-30",
+     "end": "2026-10-01",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    }
+   ],
+   "since_reset": {
+    "reset_at": null,
+    "count": 5,
+    "seconds": 0.0,
+    "active_days": 4,
+    "resets": 0,
+    "all_time": {
+     "count": 5,
+     "seconds": 0,
+     "active_days": 4
+    }
+   }
+  },
+  "h_read:week:0": {
+   "habit_id": "h_read",
+   "summary": {
+    "period": "week",
+    "start": "2026-10-05",
+    "end": "2026-10-12",
+    "count": 2,
+    "seconds": 9600.0,
+    "active_days": 3,
+    "best_streak_in_period": 3,
+    "current_streak": 3,
+    "best_streak": 3,
+    "first_day": "2026-10-02",
+    "last_day": "2026-10-07"
+   },
+   "buckets": [
+    {
+     "key": "2026-10-05",
+     "start": "2026-10-05",
+     "end": "2026-10-06",
+     "count": 1,
+     "seconds": 5400.0,
+     "active_days": 1
+    },
+    {
+     "key": "2026-10-06",
+     "start": "2026-10-06",
+     "end": "2026-10-07",
+     "count": 0,
+     "seconds": 2700.0,
+     "active_days": 1
+    },
+    {
+     "key": "2026-10-07",
+     "start": "2026-10-07",
+     "end": "2026-10-08",
+     "count": 1,
+     "seconds": 1500.0,
+     "active_days": 1
+    },
+    {
+     "key": "2026-10-08",
+     "start": "2026-10-08",
+     "end": "2026-10-09",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-10-09",
+     "start": "2026-10-09",
+     "end": "2026-10-10",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-10-10",
+     "start": "2026-10-10",
+     "end": "2026-10-11",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-10-11",
+     "start": "2026-10-11",
+     "end": "2026-10-12",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    }
+   ],
+   "since_reset": {
+    "reset_at": "2026-10-04T16:00:00+00:00",
+    "count": 2,
+    "seconds": 9600.0,
+    "active_days": 3,
+    "resets": 1,
+    "all_time": {
+     "count": 3,
+     "seconds": 12600.0,
+     "active_days": 4
+    }
+   }
+  },
+  "h_read:month:0": {
+   "habit_id": "h_read",
+   "summary": {
+    "period": "month",
+    "start": "2026-10-01",
+    "end": "2026-11-01",
+    "count": 3,
+    "seconds": 12600.0,
+    "active_days": 4,
+    "best_streak_in_period": 3,
+    "current_streak": 3,
+    "best_streak": 3,
+    "first_day": "2026-10-02",
+    "last_day": "2026-10-07"
+   },
+   "buckets": [
+    {
+     "key": "2026-10-01",
+     "start": "2026-10-01",
+     "end": "2026-10-02",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-10-02",
+     "start": "2026-10-02",
+     "end": "2026-10-03",
+     "count": 1,
+     "seconds": 3000.0,
+     "active_days": 1
+    },
+    {
+     "key": "2026-10-03",
+     "start": "2026-10-03",
+     "end": "2026-10-04",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-10-04",
+     "start": "2026-10-04",
+     "end": "2026-10-05",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-10-05",
+     "start": "2026-10-05",
+     "end": "2026-10-06",
+     "count": 1,
+     "seconds": 5400.0,
+     "active_days": 1
+    },
+    {
+     "key": "2026-10-06",
+     "start": "2026-10-06",
+     "end": "2026-10-07",
+     "count": 0,
+     "seconds": 2700.0,
+     "active_days": 1
+    },
+    {
+     "key": "2026-10-07",
+     "start": "2026-10-07",
+     "end": "2026-10-08",
+     "count": 1,
+     "seconds": 1500.0,
+     "active_days": 1
+    },
+    {
+     "key": "2026-10-08",
+     "start": "2026-10-08",
+     "end": "2026-10-09",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-10-09",
+     "start": "2026-10-09",
+     "end": "2026-10-10",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-10-10",
+     "start": "2026-10-10",
+     "end": "2026-10-11",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-10-11",
+     "start": "2026-10-11",
+     "end": "2026-10-12",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-10-12",
+     "start": "2026-10-12",
+     "end": "2026-10-13",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-10-13",
+     "start": "2026-10-13",
+     "end": "2026-10-14",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-10-14",
+     "start": "2026-10-14",
+     "end": "2026-10-15",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-10-15",
+     "start": "2026-10-15",
+     "end": "2026-10-16",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-10-16",
+     "start": "2026-10-16",
+     "end": "2026-10-17",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-10-17",
+     "start": "2026-10-17",
+     "end": "2026-10-18",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-10-18",
+     "start": "2026-10-18",
+     "end": "2026-10-19",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-10-19",
+     "start": "2026-10-19",
+     "end": "2026-10-20",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-10-20",
+     "start": "2026-10-20",
+     "end": "2026-10-21",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-10-21",
+     "start": "2026-10-21",
+     "end": "2026-10-22",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-10-22",
+     "start": "2026-10-22",
+     "end": "2026-10-23",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-10-23",
+     "start": "2026-10-23",
+     "end": "2026-10-24",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-10-24",
+     "start": "2026-10-24",
+     "end": "2026-10-25",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-10-25",
+     "start": "2026-10-25",
+     "end": "2026-10-26",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-10-26",
+     "start": "2026-10-26",
+     "end": "2026-10-27",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-10-27",
+     "start": "2026-10-27",
+     "end": "2026-10-28",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-10-28",
+     "start": "2026-10-28",
+     "end": "2026-10-29",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-10-29",
+     "start": "2026-10-29",
+     "end": "2026-10-30",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-10-30",
+     "start": "2026-10-30",
+     "end": "2026-10-31",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-10-31",
+     "start": "2026-10-31",
+     "end": "2026-11-01",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    }
+   ],
+   "since_reset": {
+    "reset_at": "2026-10-04T16:00:00+00:00",
+    "count": 2,
+    "seconds": 9600.0,
+    "active_days": 3,
+    "resets": 1,
+    "all_time": {
+     "count": 3,
+     "seconds": 12600.0,
+     "active_days": 4
+    }
+   }
+  },
+  "h_read:year:0": {
+   "habit_id": "h_read",
+   "summary": {
+    "period": "year",
+    "start": "2026-01-01",
+    "end": "2027-01-01",
+    "count": 3,
+    "seconds": 12600.0,
+    "active_days": 4,
+    "best_streak_in_period": 3,
+    "current_streak": 3,
+    "best_streak": 3,
+    "first_day": "2026-10-02",
+    "last_day": "2026-10-07"
+   },
+   "buckets": [
+    {
+     "key": "2026-01",
+     "start": "2026-01-01",
+     "end": "2026-02-01",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-02",
+     "start": "2026-02-01",
+     "end": "2026-03-01",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-03",
+     "start": "2026-03-01",
+     "end": "2026-04-01",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-04",
+     "start": "2026-04-01",
+     "end": "2026-05-01",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-05",
+     "start": "2026-05-01",
+     "end": "2026-06-01",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-06",
+     "start": "2026-06-01",
+     "end": "2026-07-01",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-07",
+     "start": "2026-07-01",
+     "end": "2026-08-01",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-08",
+     "start": "2026-08-01",
+     "end": "2026-09-01",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-09",
+     "start": "2026-09-01",
+     "end": "2026-10-01",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-10",
+     "start": "2026-10-01",
+     "end": "2026-11-01",
+     "count": 3,
+     "seconds": 12600.0,
+     "active_days": 4
+    },
+    {
+     "key": "2026-11",
+     "start": "2026-11-01",
+     "end": "2026-12-01",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-12",
+     "start": "2026-12-01",
+     "end": "2027-01-01",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    }
+   ],
+   "since_reset": {
+    "reset_at": "2026-10-04T16:00:00+00:00",
+    "count": 2,
+    "seconds": 9600.0,
+    "active_days": 3,
+    "resets": 1,
+    "all_time": {
+     "count": 3,
+     "seconds": 12600.0,
+     "active_days": 4
+    }
+   }
+  },
+  "h_read:all:0": {
+   "habit_id": "h_read",
+   "summary": {
+    "period": "all",
+    "start": null,
+    "end": null,
+    "count": 3,
+    "seconds": 12600.0,
+    "active_days": 4,
+    "best_streak_in_period": 3,
+    "current_streak": 3,
+    "best_streak": 3,
+    "first_day": "2026-10-02",
+    "last_day": "2026-10-07"
+   },
+   "buckets": [
+    {
+     "key": "2026",
+     "start": "2026-01-01",
+     "end": "2027-01-01",
+     "count": 3,
+     "seconds": 12600.0,
+     "active_days": 4
+    }
+   ],
+   "since_reset": {
+    "reset_at": "2026-10-04T16:00:00+00:00",
+    "count": 2,
+    "seconds": 9600.0,
+    "active_days": 3,
+    "resets": 1,
+    "all_time": {
+     "count": 3,
+     "seconds": 12600.0,
+     "active_days": 4
+    }
+   }
+  },
+  "h_read:month:-1": {
+   "habit_id": "h_read",
+   "summary": {
+    "period": "month",
+    "start": "2026-09-01",
+    "end": "2026-10-01",
+    "count": 0,
+    "seconds": 0,
+    "active_days": 0,
+    "best_streak_in_period": 0,
+    "current_streak": 3,
+    "best_streak": 3,
+    "first_day": "2026-10-02",
+    "last_day": "2026-10-07"
+   },
+   "buckets": [
+    {
+     "key": "2026-09-01",
+     "start": "2026-09-01",
+     "end": "2026-09-02",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-09-02",
+     "start": "2026-09-02",
+     "end": "2026-09-03",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-09-03",
+     "start": "2026-09-03",
+     "end": "2026-09-04",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-09-04",
+     "start": "2026-09-04",
+     "end": "2026-09-05",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-09-05",
+     "start": "2026-09-05",
+     "end": "2026-09-06",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-09-06",
+     "start": "2026-09-06",
+     "end": "2026-09-07",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-09-07",
+     "start": "2026-09-07",
+     "end": "2026-09-08",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-09-08",
+     "start": "2026-09-08",
+     "end": "2026-09-09",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-09-09",
+     "start": "2026-09-09",
+     "end": "2026-09-10",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-09-10",
+     "start": "2026-09-10",
+     "end": "2026-09-11",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-09-11",
+     "start": "2026-09-11",
+     "end": "2026-09-12",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-09-12",
+     "start": "2026-09-12",
+     "end": "2026-09-13",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-09-13",
+     "start": "2026-09-13",
+     "end": "2026-09-14",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-09-14",
+     "start": "2026-09-14",
+     "end": "2026-09-15",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-09-15",
+     "start": "2026-09-15",
+     "end": "2026-09-16",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-09-16",
+     "start": "2026-09-16",
+     "end": "2026-09-17",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-09-17",
+     "start": "2026-09-17",
+     "end": "2026-09-18",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-09-18",
+     "start": "2026-09-18",
+     "end": "2026-09-19",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-09-19",
+     "start": "2026-09-19",
+     "end": "2026-09-20",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-09-20",
+     "start": "2026-09-20",
+     "end": "2026-09-21",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-09-21",
+     "start": "2026-09-21",
+     "end": "2026-09-22",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-09-22",
+     "start": "2026-09-22",
+     "end": "2026-09-23",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-09-23",
+     "start": "2026-09-23",
+     "end": "2026-09-24",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-09-24",
+     "start": "2026-09-24",
+     "end": "2026-09-25",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-09-25",
+     "start": "2026-09-25",
+     "end": "2026-09-26",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-09-26",
+     "start": "2026-09-26",
+     "end": "2026-09-27",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-09-27",
+     "start": "2026-09-27",
+     "end": "2026-09-28",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-09-28",
+     "start": "2026-09-28",
+     "end": "2026-09-29",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-09-29",
+     "start": "2026-09-29",
+     "end": "2026-09-30",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-09-30",
+     "start": "2026-09-30",
+     "end": "2026-10-01",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    }
+   ],
+   "since_reset": {
+    "reset_at": "2026-10-04T16:00:00+00:00",
+    "count": 2,
+    "seconds": 9600.0,
+    "active_days": 3,
+    "resets": 1,
+    "all_time": {
+     "count": 3,
+     "seconds": 12600.0,
+     "active_days": 4
+    }
+   }
+  },
+  "h_sugar:week:0": {
+   "habit_id": "h_sugar",
+   "summary": {
+    "period": "week",
+    "start": "2026-10-05",
+    "end": "2026-10-12",
+    "count": 2,
+    "seconds": 0,
+    "active_days": 2,
+    "best_streak_in_period": 2,
+    "current_streak": 4,
+    "best_streak": 4,
+    "first_day": "2026-09-30",
+    "last_day": "2026-10-06"
+   },
+   "buckets": [
+    {
+     "key": "2026-10-05",
+     "start": "2026-10-05",
+     "end": "2026-10-06",
+     "count": 1,
+     "seconds": 0,
+     "active_days": 1
+    },
+    {
+     "key": "2026-10-06",
+     "start": "2026-10-06",
+     "end": "2026-10-07",
+     "count": 1,
+     "seconds": 0,
+     "active_days": 1
+    },
+    {
+     "key": "2026-10-07",
+     "start": "2026-10-07",
+     "end": "2026-10-08",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-10-08",
+     "start": "2026-10-08",
+     "end": "2026-10-09",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-10-09",
+     "start": "2026-10-09",
+     "end": "2026-10-10",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-10-10",
+     "start": "2026-10-10",
+     "end": "2026-10-11",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-10-11",
+     "start": "2026-10-11",
+     "end": "2026-10-12",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    }
+   ],
+   "since_reset": null
+  },
+  "h_sugar:month:0": {
+   "habit_id": "h_sugar",
+   "summary": {
+    "period": "month",
+    "start": "2026-10-01",
+    "end": "2026-11-01",
+    "count": 5,
+    "seconds": 0,
+    "active_days": 5,
+    "best_streak_in_period": 4,
+    "current_streak": 4,
+    "best_streak": 4,
+    "first_day": "2026-09-30",
+    "last_day": "2026-10-06"
+   },
+   "buckets": [
+    {
+     "key": "2026-10-01",
+     "start": "2026-10-01",
+     "end": "2026-10-02",
+     "count": 1,
+     "seconds": 0,
+     "active_days": 1
+    },
+    {
+     "key": "2026-10-02",
+     "start": "2026-10-02",
+     "end": "2026-10-03",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-10-03",
+     "start": "2026-10-03",
+     "end": "2026-10-04",
+     "count": 1,
+     "seconds": 0,
+     "active_days": 1
+    },
+    {
+     "key": "2026-10-04",
+     "start": "2026-10-04",
+     "end": "2026-10-05",
+     "count": 1,
+     "seconds": 0,
+     "active_days": 1
+    },
+    {
+     "key": "2026-10-05",
+     "start": "2026-10-05",
+     "end": "2026-10-06",
+     "count": 1,
+     "seconds": 0,
+     "active_days": 1
+    },
+    {
+     "key": "2026-10-06",
+     "start": "2026-10-06",
+     "end": "2026-10-07",
+     "count": 1,
+     "seconds": 0,
+     "active_days": 1
+    },
+    {
+     "key": "2026-10-07",
+     "start": "2026-10-07",
+     "end": "2026-10-08",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-10-08",
+     "start": "2026-10-08",
+     "end": "2026-10-09",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-10-09",
+     "start": "2026-10-09",
+     "end": "2026-10-10",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-10-10",
+     "start": "2026-10-10",
+     "end": "2026-10-11",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-10-11",
+     "start": "2026-10-11",
+     "end": "2026-10-12",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-10-12",
+     "start": "2026-10-12",
+     "end": "2026-10-13",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-10-13",
+     "start": "2026-10-13",
+     "end": "2026-10-14",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-10-14",
+     "start": "2026-10-14",
+     "end": "2026-10-15",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-10-15",
+     "start": "2026-10-15",
+     "end": "2026-10-16",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-10-16",
+     "start": "2026-10-16",
+     "end": "2026-10-17",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-10-17",
+     "start": "2026-10-17",
+     "end": "2026-10-18",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-10-18",
+     "start": "2026-10-18",
+     "end": "2026-10-19",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-10-19",
+     "start": "2026-10-19",
+     "end": "2026-10-20",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-10-20",
+     "start": "2026-10-20",
+     "end": "2026-10-21",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-10-21",
+     "start": "2026-10-21",
+     "end": "2026-10-22",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-10-22",
+     "start": "2026-10-22",
+     "end": "2026-10-23",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-10-23",
+     "start": "2026-10-23",
+     "end": "2026-10-24",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-10-24",
+     "start": "2026-10-24",
+     "end": "2026-10-25",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-10-25",
+     "start": "2026-10-25",
+     "end": "2026-10-26",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-10-26",
+     "start": "2026-10-26",
+     "end": "2026-10-27",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-10-27",
+     "start": "2026-10-27",
+     "end": "2026-10-28",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-10-28",
+     "start": "2026-10-28",
+     "end": "2026-10-29",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-10-29",
+     "start": "2026-10-29",
+     "end": "2026-10-30",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-10-30",
+     "start": "2026-10-30",
+     "end": "2026-10-31",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-10-31",
+     "start": "2026-10-31",
+     "end": "2026-11-01",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    }
+   ],
+   "since_reset": null
+  },
+  "h_sugar:year:0": {
+   "habit_id": "h_sugar",
+   "summary": {
+    "period": "year",
+    "start": "2026-01-01",
+    "end": "2027-01-01",
+    "count": 6,
+    "seconds": 0,
+    "active_days": 6,
+    "best_streak_in_period": 4,
+    "current_streak": 4,
+    "best_streak": 4,
+    "first_day": "2026-09-30",
+    "last_day": "2026-10-06"
+   },
+   "buckets": [
+    {
+     "key": "2026-01",
+     "start": "2026-01-01",
+     "end": "2026-02-01",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-02",
+     "start": "2026-02-01",
+     "end": "2026-03-01",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-03",
+     "start": "2026-03-01",
+     "end": "2026-04-01",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-04",
+     "start": "2026-04-01",
+     "end": "2026-05-01",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-05",
+     "start": "2026-05-01",
+     "end": "2026-06-01",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-06",
+     "start": "2026-06-01",
+     "end": "2026-07-01",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-07",
+     "start": "2026-07-01",
+     "end": "2026-08-01",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-08",
+     "start": "2026-08-01",
+     "end": "2026-09-01",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-09",
+     "start": "2026-09-01",
+     "end": "2026-10-01",
+     "count": 1,
+     "seconds": 0,
+     "active_days": 1
+    },
+    {
+     "key": "2026-10",
+     "start": "2026-10-01",
+     "end": "2026-11-01",
+     "count": 5,
+     "seconds": 0,
+     "active_days": 5
+    },
+    {
+     "key": "2026-11",
+     "start": "2026-11-01",
+     "end": "2026-12-01",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-12",
+     "start": "2026-12-01",
+     "end": "2027-01-01",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    }
+   ],
+   "since_reset": null
+  },
+  "h_sugar:all:0": {
+   "habit_id": "h_sugar",
+   "summary": {
+    "period": "all",
+    "start": null,
+    "end": null,
+    "count": 6,
+    "seconds": 0,
+    "active_days": 6,
+    "best_streak_in_period": 4,
+    "current_streak": 4,
+    "best_streak": 4,
+    "first_day": "2026-09-30",
+    "last_day": "2026-10-06"
+   },
+   "buckets": [
+    {
+     "key": "2026",
+     "start": "2026-01-01",
+     "end": "2027-01-01",
+     "count": 6,
+     "seconds": 0,
+     "active_days": 6
+    }
+   ],
+   "since_reset": null
+  },
+  "h_sugar:month:-1": {
+   "habit_id": "h_sugar",
+   "summary": {
+    "period": "month",
+    "start": "2026-09-01",
+    "end": "2026-10-01",
+    "count": 1,
+    "seconds": 0,
+    "active_days": 1,
+    "best_streak_in_period": 1,
+    "current_streak": 4,
+    "best_streak": 4,
+    "first_day": "2026-09-30",
+    "last_day": "2026-10-06"
+   },
+   "buckets": [
+    {
+     "key": "2026-09-01",
+     "start": "2026-09-01",
+     "end": "2026-09-02",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-09-02",
+     "start": "2026-09-02",
+     "end": "2026-09-03",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-09-03",
+     "start": "2026-09-03",
+     "end": "2026-09-04",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-09-04",
+     "start": "2026-09-04",
+     "end": "2026-09-05",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-09-05",
+     "start": "2026-09-05",
+     "end": "2026-09-06",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-09-06",
+     "start": "2026-09-06",
+     "end": "2026-09-07",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-09-07",
+     "start": "2026-09-07",
+     "end": "2026-09-08",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-09-08",
+     "start": "2026-09-08",
+     "end": "2026-09-09",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-09-09",
+     "start": "2026-09-09",
+     "end": "2026-09-10",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-09-10",
+     "start": "2026-09-10",
+     "end": "2026-09-11",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-09-11",
+     "start": "2026-09-11",
+     "end": "2026-09-12",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-09-12",
+     "start": "2026-09-12",
+     "end": "2026-09-13",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-09-13",
+     "start": "2026-09-13",
+     "end": "2026-09-14",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-09-14",
+     "start": "2026-09-14",
+     "end": "2026-09-15",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-09-15",
+     "start": "2026-09-15",
+     "end": "2026-09-16",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-09-16",
+     "start": "2026-09-16",
+     "end": "2026-09-17",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-09-17",
+     "start": "2026-09-17",
+     "end": "2026-09-18",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-09-18",
+     "start": "2026-09-18",
+     "end": "2026-09-19",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-09-19",
+     "start": "2026-09-19",
+     "end": "2026-09-20",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-09-20",
+     "start": "2026-09-20",
+     "end": "2026-09-21",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-09-21",
+     "start": "2026-09-21",
+     "end": "2026-09-22",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-09-22",
+     "start": "2026-09-22",
+     "end": "2026-09-23",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-09-23",
+     "start": "2026-09-23",
+     "end": "2026-09-24",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-09-24",
+     "start": "2026-09-24",
+     "end": "2026-09-25",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-09-25",
+     "start": "2026-09-25",
+     "end": "2026-09-26",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-09-26",
+     "start": "2026-09-26",
+     "end": "2026-09-27",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-09-27",
+     "start": "2026-09-27",
+     "end": "2026-09-28",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-09-28",
+     "start": "2026-09-28",
+     "end": "2026-09-29",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-09-29",
+     "start": "2026-09-29",
+     "end": "2026-09-30",
+     "count": 0,
+     "seconds": 0,
+     "active_days": 0
+    },
+    {
+     "key": "2026-09-30",
+     "start": "2026-09-30",
+     "end": "2026-10-01",
+     "count": 1,
+     "seconds": 0,
+     "active_days": 1
+    }
+   ],
+   "since_reset": null
+  }
+ },
+ "lists": {
+  "h_diet": {
+   "entries": [
+    {
+     "id": "01M4VJH9RT3EQ6S330EYY2JFWW",
+     "habit_id": "h_diet",
+     "day": "2026-10-01",
+     "start": null,
+     "end": null,
+     "notes": "",
+     "created": "2026-10-07T18:05:00+00:00",
+     "updated": "2026-10-07T18:05:00+00:00",
+     "user_id": null,
+     "habit_name": "Diet",
+     "count_day": "2026-10-01",
+     "days": [
+      "2026-10-01"
+     ]
+    },
+    {
+     "id": "01M4VJH9RTQ61KTK2QE8ETNAXC",
+     "habit_id": "h_diet",
+     "day": "2026-10-02",
+     "start": null,
+     "end": null,
+     "notes": "",
+     "created": "2026-10-07T18:05:00+00:00",
+     "updated": "2026-10-07T18:05:00+00:00",
+     "user_id": null,
+     "habit_name": "Diet",
+     "count_day": "2026-10-02",
+     "days": [
+      "2026-10-02"
+     ]
+    },
+    {
+     "id": "01M4VJH9RVBN2RBJXTYX5R8J3R",
+     "habit_id": "h_diet",
+     "day": "2026-10-04",
+     "start": null,
+     "end": null,
+     "notes": "",
+     "created": "2026-10-07T18:05:00+00:00",
+     "updated": "2026-10-07T18:05:00+00:00",
+     "user_id": null,
+     "habit_name": "Diet",
+     "count_day": "2026-10-04",
+     "days": [
+      "2026-10-04"
+     ]
+    },
+    {
+     "id": "01M4VJH9RVJCKPKJ2B78JBFNJM",
+     "habit_id": "h_diet",
+     "day": "2026-10-05",
+     "start": null,
+     "end": null,
+     "notes": "",
+     "created": "2026-10-07T18:05:00+00:00",
+     "updated": "2026-10-07T18:05:00+00:00",
+     "user_id": null,
+     "habit_name": "Diet",
+     "count_day": "2026-10-05",
+     "days": [
+      "2026-10-05"
+     ]
+    },
+    {
+     "id": "01M4VJH9RVMD3FC7T0XFSHE30K",
+     "habit_id": "h_diet",
+     "day": "2026-10-06",
+     "start": null,
+     "end": null,
+     "notes": "",
+     "created": "2026-10-07T18:05:00+00:00",
+     "updated": "2026-10-07T18:05:00+00:00",
+     "user_id": null,
+     "habit_name": "Diet",
+     "count_day": "2026-10-06",
+     "days": [
+      "2026-10-06"
+     ]
+    },
+    {
+     "id": "01M4VJH9RVZG7HFW1P8E50T8JZ",
+     "habit_id": "h_diet",
+     "day": "2026-10-07",
+     "start": null,
+     "end": null,
+     "notes": "",
+     "created": "2026-10-07T18:05:00+00:00",
+     "updated": "2026-10-07T18:05:00+00:00",
+     "user_id": null,
+     "habit_name": "Diet",
+     "count_day": "2026-10-07",
+     "days": [
+      "2026-10-07"
+     ]
+    }
+   ],
+   "journal": []
+  },
+  "h_run": {
+   "entries": [
+    {
+     "id": "01M4VJH9S0HSEB646HASCQYDDX",
+     "habit_id": "h_run",
+     "day": "2026-10-01",
+     "start": null,
+     "end": null,
+     "notes": "",
+     "created": "2026-10-07T18:05:00+00:00",
+     "updated": "2026-10-07T18:05:00+00:00",
+     "user_id": null,
+     "habit_name": "Run",
+     "count_day": "2026-10-01",
+     "days": [
+      "2026-10-01"
+     ]
+    },
+    {
+     "id": "01M4VJH9S2YPR2A9GDJNGF5420",
+     "habit_id": "h_run",
+     "day": "2026-10-01",
+     "start": null,
+     "end": null,
+     "notes": "",
+     "created": "2026-10-07T18:05:00+00:00",
+     "updated": "2026-10-07T18:05:00+00:00",
+     "user_id": null,
+     "habit_name": "Run",
+     "count_day": "2026-10-01",
+     "days": [
+      "2026-10-01"
+     ]
+    },
+    {
+     "id": "01M4VJH9S4ZX5JJJVSRFVCV7TK",
+     "habit_id": "h_run",
+     "day": "2026-10-03",
+     "start": null,
+     "end": null,
+     "notes": "",
+     "created": "2026-10-07T18:05:00+00:00",
+     "updated": "2026-10-07T18:05:00+00:00",
+     "user_id": null,
+     "habit_name": "Run",
+     "count_day": "2026-10-03",
+     "days": [
+      "2026-10-03"
+     ]
+    },
+    {
+     "id": "01M4VJH9S5RGKFAF0RKXA76V6M",
+     "habit_id": "h_run",
+     "day": "2026-10-06",
+     "start": null,
+     "end": null,
+     "notes": "Park loop, easy pace",
+     "created": "2026-10-07T18:05:00+00:00",
+     "updated": "2026-10-07T18:05:00+00:00",
+     "user_id": null,
+     "habit_name": "Run",
+     "count_day": "2026-10-06",
+     "days": [
+      "2026-10-06"
+     ]
+    }
+   ],
+   "journal": []
+  },
+  "h_read": {
+   "entries": [
+    {
+     "id": "01M4VJH9SA7M8QHJTNYTA1KD8T",
+     "habit_id": "h_read",
+     "day": null,
+     "start": "2026-10-02T23:00:00+00:00",
+     "end": "2026-10-02T23:50:00+00:00",
+     "notes": "",
+     "created": "2026-10-07T18:05:00+00:00",
+     "updated": "2026-10-07T18:05:00+00:00",
+     "user_id": null,
+     "habit_name": "Reading",
+     "count_day": "2026-10-02",
+     "days": [
+      "2026-10-02"
+     ],
+     "start_local": "2026-10-02T19:00:00",
+     "end_local": "2026-10-02T19:50:00",
+     "seconds": 3000.0
+    },
+    {
+     "id": "01M4VJH9S7RJP0W5672XQTWQFM",
+     "habit_id": "h_read",
+     "day": null,
+     "start": "2026-10-06T02:30:00+00:00",
+     "end": "2026-10-06T04:45:00+00:00",
+     "notes": "Finished part two",
+     "created": "2026-10-07T18:05:00+00:00",
+     "updated": "2026-10-07T18:05:00+00:00",
+     "user_id": null,
+     "habit_name": "Reading",
+     "count_day": "2026-10-05",
+     "days": [
+      "2026-10-05",
+      "2026-10-06"
+     ],
+     "start_local": "2026-10-05T22:30:00",
+     "end_local": "2026-10-06T00:45:00",
+     "seconds": 8100.0
+    },
+    {
+     "id": "01M4VJH9SCN81Y1RS64X5DWK30",
+     "habit_id": "h_read",
+     "day": null,
+     "start": "2026-10-07T11:15:00+00:00",
+     "end": "2026-10-07T11:40:00+00:00",
+     "notes": "",
+     "created": "2026-10-07T18:05:00+00:00",
+     "updated": "2026-10-07T18:05:00+00:00",
+     "user_id": null,
+     "habit_name": "Reading",
+     "count_day": "2026-10-07",
+     "days": [
+      "2026-10-07"
+     ],
+     "start_local": "2026-10-07T07:15:00",
+     "end_local": "2026-10-07T07:40:00",
+     "seconds": 1500.0
+    }
+   ],
+   "journal": []
+  }
+ }
+}

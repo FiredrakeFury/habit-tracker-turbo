@@ -1,0 +1,62 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+  :root { --primary-color:#03a9f4; --accent-color:#ff9800; --primary-text-color:#212121; --secondary-text-color:#727272;
+    --text-primary-color:#fff; --card-background-color:#fff; --secondary-background-color:#e5e5e5; --divider-color:rgba(0,0,0,.12);
+    --error-color:#db4437; --warning-color:#ffa600; font-family: Roboto, "Segoe UI", system-ui, sans-serif; }
+  body.dark { --primary-text-color:#e1e1e1; --secondary-text-color:#9b9b9b; --card-background-color:#1c1c1c;
+    --secondary-background-color:#282828; --divider-color:rgba(225,225,225,.12); background:#111; }
+  body { margin:0; padding:16px; background:#fafafa; font-size:14px; color: var(--primary-text-color); }
+  ha-card { display:block; background:var(--card-background-color); border-radius:12px; border:1px solid var(--divider-color); }
+  ha-icon { display:inline-block; width:20px; height:20px; font-size:18px; line-height:20px; text-align:center; }
+  #host { max-width: var(--w, 520px); }
+</style></head>
+<body>
+<div id="host"></div>
+<script>
+  // Minimal stand-ins for HA's own elements.
+  customElements.define("ha-card", class extends HTMLElement {});
+  customElements.define("ha-icon", class extends HTMLElement {
+    connectedCallback() { const m = {"mdi:chevron-left":"‹","mdi:chevron-right":"›","mdi:pencil":"✎","mdi:delete-outline":"🗑"}; this.textContent = m[this.getAttribute("icon")] || "•"; }
+  });
+</script>
+<script src="fixture.js"></script>
+<script src="../../custom_components/habit_log/www/habit-log-card.js"></script>
+<script>
+  // Like the real frontend: the app element is defined after the card file
+  // has loaded; the card registers itself once it exists.
+  customElements.define("home-assistant", class extends HTMLElement {});
+</script>
+<script>
+(async () => {
+  const fx = window.FX;
+  const params = new URLSearchParams(location.search);
+  const dark = params.get("dark") === "1";
+  if (dark) document.body.classList.add("dark");
+  window.calls = [];
+  const hass = {
+    language: "en", locale: { language: "en" }, themes: { darkMode: dark },
+    connection: { subscribeMessage: async (cb) => { window.push = cb; return () => {}; } },
+    callWS: async (msg) => {
+      window.calls.push(msg);
+      if (msg.type === "habit_log/config") return fx.config;
+      if (msg.type === "habit_log/entries") return fx.entries;
+      if (msg.type === "habit_log/stats") return fx.stats[`${msg.habit_id}:${msg.period}:${msg.offset || 0}`] || fx.stats[`${msg.habit_id}:${msg.period}:0`];
+      if (msg.type === "call_service" && msg.service === "list_entries") return { response: fx.lists[msg.service_data.habit] };
+      if (msg.type === "call_service" && msg.service === "reset_counter") return { response: { reset_at: "2026-10-07T18:05:00+00:00", since_reset: {} } };
+      if (msg.type === "call_service" && msg.service === "undo_reset") return { response: { removed: "x", last_reset: null } };
+      if (msg.type === "call_service" && msg.service === "backfill") return { response: { added: 9, skipped: 2 } };
+      if (msg.type === "call_service" && msg.service === "log" && msg.service_data.date === "2026-10-09") throw { code: "service_validation_error", message: "Validation error: 2026-10-09 is in the future" };
+      if (msg.type === "call_service") return { response: { entry_id: "new", created: true } };
+      throw { code: "unknown_command", message: "?" };
+    },
+  };
+  const card = document.createElement("habit-log-card");
+  card.setConfig({ title: "Habits", initial_view: params.get("view") || "calendar", show_streak_emoji: params.get("emoji") !== "0" });
+  document.getElementById("host").append(card);
+  card.hass = hass;
+  window.card = card;
+  window.ready = true;
+})();
+</script>
+</body></html>

@@ -1,0 +1,80 @@
+name: Tests
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+  workflow_call:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: tests-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  PYTHON_VERSION: "3.14"
+  RUFF_VERSION: "0.16.10"
+  PLAYWRIGHT_VERSION: "1.56.0"
+
+jobs:
+  lint:
+    name: Ruff
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: astral-sh/setup-uv@1c37ad07a6a961277cf70c0d37d6f313000f5884 # v10.3.0
+        with:
+          enable-cache: false
+      - run: uvx "ruff@${RUFF_VERSION}" check .
+      - run: uvx "ruff@${RUFF_VERSION}" format --check .
+
+  pytest:
+    name: pytest (HA ${{ matrix.ha }})
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - ha: "2026.9.4"
+            phcc: "0.13.367"
+          - ha: "2026.10.0"
+            phcc: "0.13.371"
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: astral-sh/setup-uv@1c37ad07a6a961277cf70c0d37d6f313000f5884 # v10.3.0
+        with:
+          enable-cache: false
+      - name: Install pytest-homeassistant-custom-component ${{ matrix.phcc }}
+        env:
+          PHCC: ${{ matrix.phcc }}
+        run: |
+          uv venv --python "${PYTHON_VERSION}" .venv
+          uv pip install --python .venv "pytest-homeassistant-custom-component==${PHCC}"
+      - run: .venv/bin/pytest -q -p no:cacheprovider
+
+  card:
+    name: Card (browser)
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: astral-sh/setup-uv@1c37ad07a6a961277cf70c0d37d6f313000f5884 # v10.3.0
+        with:
+          enable-cache: false
+      - name: Install Playwright and Chromium
+        run: |
+          uv venv --python "${PYTHON_VERSION}" .venv
+          uv pip install --python .venv "playwright==${PLAYWRIGHT_VERSION}"
+          .venv/bin/playwright install --with-deps chromium
+      - run: .venv/bin/python tests/card/interact.py

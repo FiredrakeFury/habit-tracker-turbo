@@ -1,0 +1,497 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Habit Log",
+        "description": "Set up Habit Log. Add habits and journal fields afterwards from this integration's page."
+      }
+    },
+    "abort": {
+      "single_instance_allowed": "Habit Log is already set up."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Habit Log options",
+        "data": {
+          "allowed_users": "Allowed users",
+          "week_start": "First day of the week",
+          "calendar_details": "Show notes and journal values in the calendar entity"
+        },
+        "data_description": {
+          "allowed_users": "Only these users can log, edit or view entries in the card. Leave empty to allow everyone. Automations are always allowed.",
+          "calendar_details": "Off keeps notes and journal values out of the calendar entity, which any Home Assistant user can read."
+        }
+      }
+    }
+  },
+  "config_subentries": {
+    "habit": {
+      "entry_type": "Habit",
+      "initiate_flow": {
+        "user": "Add habit",
+        "reconfigure": "Edit habit"
+      },
+      "step": {
+        "user": {
+          "title": "Add habit",
+          "data": {
+            "name": "Name",
+            "emoji": "Emoji",
+            "color": "Color",
+            "kind": "Type",
+            "track_time": "Track time (counters only)",
+            "order": "Sort order",
+            "archived": "Archived"
+          },
+          "data_description": {
+            "emoji": "Shown on the calendar for counters and in labels.",
+            "color": "Used for streak bands and charts.",
+            "kind": "Counter: counts occurrences, emoji on the calendar. Streak: consecutive days, colored band on the calendar.",
+            "track_time": "Each entry records a start and end (or duration); totals show cumulative time as well as the number of entries.",
+            "order": "Lower numbers are shown first.",
+            "archived": "Hides the habit from logging and removes its sensors. History is kept and the habit can be restored by turning this off."
+          }
+        },
+        "reconfigure": {
+          "title": "Edit habit",
+          "description": "Renames, emoji and color changes apply to past entries automatically.",
+          "data": {
+            "name": "Name",
+            "emoji": "Emoji",
+            "color": "Color",
+            "kind": "Type",
+            "track_time": "Track time (counters only)",
+            "order": "Sort order",
+            "archived": "Archived"
+          },
+          "data_description": {
+            "emoji": "Shown on the calendar for counters and in labels.",
+            "color": "Used for streak bands and charts.",
+            "kind": "Counter: counts occurrences, emoji on the calendar. Streak: consecutive days, colored band on the calendar.",
+            "track_time": "Each entry records a start and end (or duration); totals show cumulative time as well as the number of entries.",
+            "order": "Lower numbers are shown first.",
+            "archived": "Hides the habit from logging and removes its sensors. History is kept and the habit can be restored by turning this off."
+          }
+        }
+      },
+      "error": {
+        "name_required": "A name is required.",
+        "name_too_long": "The name is too long (40 characters max).",
+        "name_exists": "A habit with this name already exists.",
+        "emoji_too_long": "The emoji is too long.",
+        "invalid_kind": "Choose counter or streak.",
+        "streak_time_tracking": "Time tracking is only available for counters.",
+        "has_timed_entries": "This habit has time-tracked entries. Keep it a time-tracked counter, or merge its entries into another time-tracked habit first."
+      },
+      "abort": {
+        "reconfigure_successful": "Habit updated."
+      }
+    },
+    "journal_field": {
+      "entry_type": "Journal field",
+      "initiate_flow": {
+        "user": "Add journal field",
+        "reconfigure": "Edit journal field"
+      },
+      "step": {
+        "user": {
+          "title": "Add journal field",
+          "data": {
+            "name": "Field name",
+            "field_type": "Field type",
+            "order": "Sort order",
+            "active": "Active"
+          },
+          "data_description": {
+            "field_type": "Changing the type only affects future entries; past entries keep what was recorded.",
+            "active": "Inactive fields are hidden from the journal form. Past values are kept."
+          }
+        },
+        "reconfigure": {
+          "title": "Edit journal field",
+          "description": "Changes apply to future entries only.",
+          "data": {
+            "name": "Field name",
+            "field_type": "Field type",
+            "order": "Sort order",
+            "active": "Active"
+          },
+          "data_description": {
+            "field_type": "Changing the type only affects future entries; past entries keep what was recorded.",
+            "active": "Inactive fields are hidden from the journal form. Past values are kept."
+          }
+        },
+        "details": {
+          "title": "Field settings",
+          "description": "Settings for a {field_type} field.",
+          "data": {
+            "unit": "Unit",
+            "min": "Minimum",
+            "max": "Maximum",
+            "step": "Step",
+            "create_sensor": "Create a sensor (latest value, with long-term statistics)",
+            "options": "Options",
+            "multiline": "Multi-line"
+          },
+          "data_description": {
+            "options": "Type an option and press Enter to add it.",
+            "max": "For ratings, the scale runs from 1 to this value."
+          }
+        }
+      },
+      "error": {
+        "name_required": "A name is required.",
+        "name_too_long": "The name is too long (40 characters max).",
+        "name_exists": "A journal field with this name already exists.",
+        "invalid_field_type": "Choose a field type.",
+        "max_not_above_min": "Maximum must be greater than minimum.",
+        "step_not_positive": "Step must be greater than zero.",
+        "options_required": "Add at least one option.",
+        "too_many_options": "Too many options (50 max)."
+      },
+      "abort": {
+        "reconfigure_successful": "Journal field updated."
+      }
+    }
+  },
+  "selector": {
+    "kind": {
+      "options": {
+        "counter": "Counter",
+        "streak": "Streak"
+      }
+    },
+    "field_type": {
+      "options": {
+        "number": "Number",
+        "rating": "Rating",
+        "select": "Choice list",
+        "boolean": "Yes / no",
+        "text": "Text"
+      }
+    },
+    "week_start": {
+      "options": {
+        "monday": "Monday",
+        "sunday": "Sunday"
+      }
+    }
+  },
+  "entity": {
+    "sensor": {
+      "count_week": {
+        "name": "Count this week"
+      },
+      "count_month": {
+        "name": "Count this month"
+      },
+      "count_year": {
+        "name": "Count this year"
+      },
+      "count_total": {
+        "name": "Count all time"
+      },
+      "days_week": {
+        "name": "Days this week"
+      },
+      "days_month": {
+        "name": "Days this month"
+      },
+      "days_year": {
+        "name": "Days this year"
+      },
+      "days_total": {
+        "name": "Days all time"
+      },
+      "time_week": {
+        "name": "Time this week"
+      },
+      "time_month": {
+        "name": "Time this month"
+      },
+      "time_year": {
+        "name": "Time this year"
+      },
+      "time_total": {
+        "name": "Time all time"
+      },
+      "current_streak": {
+        "name": "Current streak"
+      },
+      "best_streak": {
+        "name": "Best streak"
+      },
+      "last_logged": {
+        "name": "Last logged"
+      },
+      "count_since_reset": {
+        "name": "Count since reset"
+      },
+      "time_since_reset": {
+        "name": "Time since reset"
+      }
+    }
+  },
+  "services": {
+    "log": {
+      "name": "Log habit",
+      "description": "Records an occurrence. Streak habits are logged once per day; counters can be logged several times. Time-tracked habits need a start plus an end or a duration.",
+      "fields": {
+        "habit": {
+          "name": "Habit",
+          "description": "The habit's device (or its habit ID)."
+        },
+        "date": {
+          "name": "Date",
+          "description": "Defaults to today. Not used for time-tracked habits."
+        },
+        "start": {
+          "name": "Start",
+          "description": "Time-tracked habits only."
+        },
+        "end": {
+          "name": "End",
+          "description": "Time-tracked habits only. Use either end or duration."
+        },
+        "duration": {
+          "name": "Duration",
+          "description": "Time-tracked habits only. Use either end or duration."
+        },
+        "notes": {
+          "name": "Notes",
+          "description": "Optional."
+        }
+      }
+    },
+    "backfill": {
+      "name": "Back-fill habit",
+      "description": "Logs a date range and/or a list of dates. Days already logged are skipped, so it is safe to re-run. Not for time-tracked habits.",
+      "fields": {
+        "habit": {
+          "name": "Habit",
+          "description": "The habit's device (or its habit ID)."
+        },
+        "start_date": {
+          "name": "Range start",
+          "description": "First day of a continuous run."
+        },
+        "end_date": {
+          "name": "Range end",
+          "description": "Last day, inclusive. Defaults to range start."
+        },
+        "dates": {
+          "name": "Individual dates",
+          "description": "YYYY-MM-DD dates separated by commas, spaces or new lines."
+        }
+      }
+    },
+    "update_entry": {
+      "name": "Update entry",
+      "description": "Changes an entry's date, times, notes or habit.",
+      "fields": {
+        "entry_id": {
+          "name": "Entry ID",
+          "description": "From the card or the list entries action."
+        },
+        "habit": {
+          "name": "Habit",
+          "description": "Move the entry to another habit."
+        },
+        "date": {
+          "name": "Date",
+          "description": "New date (date-based habits)."
+        },
+        "start": {
+          "name": "Start",
+          "description": "New start (time-tracked habits). Without an end or duration, the length is kept."
+        },
+        "end": {
+          "name": "End",
+          "description": "New end (time-tracked habits)."
+        },
+        "duration": {
+          "name": "Duration",
+          "description": "New duration (time-tracked habits)."
+        },
+        "notes": {
+          "name": "Notes",
+          "description": "Replaces the notes."
+        }
+      }
+    },
+    "delete_entry": {
+      "name": "Delete entry",
+      "description": "Deletes a habit entry or journal entry.",
+      "fields": {
+        "entry_id": {
+          "name": "Entry ID",
+          "description": "From the card or the list entries action."
+        }
+      }
+    },
+    "merge_habits": {
+      "name": "Merge habits",
+      "description": "Moves all entries from one habit into another, then archives the source. For streak targets, same-day duplicates are dropped.",
+      "fields": {
+        "source": {
+          "name": "Source habit",
+          "description": "Entries are moved out of this habit."
+        },
+        "target": {
+          "name": "Target habit",
+          "description": "Entries are moved into this habit."
+        }
+      }
+    },
+    "list_entries": {
+      "name": "List entries",
+      "description": "Returns entries (and journal entries when no habit is given) for an optional date range.",
+      "fields": {
+        "habit": {
+          "name": "Habit",
+          "description": "Optional filter."
+        },
+        "start_date": {
+          "name": "From",
+          "description": "Inclusive."
+        },
+        "end_date": {
+          "name": "To",
+          "description": "Inclusive."
+        }
+      }
+    },
+    "journal": {
+      "name": "Add journal entry",
+      "description": "Records journal values keyed by field name or ID.",
+      "fields": {
+        "date": {
+          "name": "Date",
+          "description": "Defaults to today."
+        },
+        "values": {
+          "name": "Values",
+          "description": "Field name to value as an object, for example Energy: 4 and Weight: 81.2 (YAML) or the JSON shown in the example."
+        }
+      }
+    },
+    "update_journal_entry": {
+      "name": "Update journal entry",
+      "description": "Changes a journal entry's date or values. A null value removes that field from the entry.",
+      "fields": {
+        "entry_id": {
+          "name": "Entry ID",
+          "description": "The journal entry."
+        },
+        "date": {
+          "name": "Date",
+          "description": "New date."
+        },
+        "values": {
+          "name": "Values",
+          "description": "Field name to new value; null removes it."
+        }
+      }
+    },
+    "reset_counter": {
+      "name": "Reset counter",
+      "description": "Starts the counter's \"since reset\" totals from now (or a given time). Entries are kept and all-time totals are unchanged. Counters only.",
+      "fields": {
+        "habit": {
+          "name": "Habit",
+          "description": "The counter's device (or its habit ID)."
+        },
+        "at": {
+          "name": "Reset time",
+          "description": "Optional; defaults to now. Use to backdate a reset you forgot."
+        }
+      }
+    },
+    "undo_reset": {
+      "name": "Undo last reset",
+      "description": "Removes the most recent reset; \"since reset\" totals then count from the previous reset (or all time).",
+      "fields": {
+        "habit": {
+          "name": "Habit",
+          "description": "The counter's device (or its habit ID)."
+        }
+      }
+    }
+  },
+  "exceptions": {
+    "not_loaded": {
+      "message": "Habit Log is not loaded."
+    },
+    "habit_not_found": {
+      "message": "Habit not found: {habit}."
+    },
+    "habit_archived": {
+      "message": "{habit} is archived. Restore it in its habit settings first."
+    },
+    "entry_not_found": {
+      "message": "Entry not found: {entry_id}."
+    },
+    "future_date": {
+      "message": "{date} is in the future."
+    },
+    "invalid_date": {
+      "message": "Invalid date: {date}."
+    },
+    "time_required": {
+      "message": "This habit tracks time: provide a start plus an end or a duration (not a date)."
+    },
+    "time_not_supported": {
+      "message": "{habit} does not track time; provide a date instead of start, end or duration."
+    },
+    "date_required": {
+      "message": "Provide a date: this entry has times but its habit does not track time."
+    },
+    "end_and_duration": {
+      "message": "Provide either an end or a duration, not both."
+    },
+    "end_before_start": {
+      "message": "The end must be after the start."
+    },
+    "duration_too_long": {
+      "message": "A single period cannot exceed {days} days."
+    },
+    "streak_day_exists": {
+      "message": "{habit} already has an entry on {date}."
+    },
+    "merge_same": {
+      "message": "Source and target must be different habits."
+    },
+    "merge_incompatible": {
+      "message": "{source} has time-tracked entries, but {target} does not track time."
+    },
+    "backfill_timed": {
+      "message": "{habit} tracks time; log each period instead of back-filling dates."
+    },
+    "backfill_empty": {
+      "message": "Provide a date range or a list of dates."
+    },
+    "backfill_too_many": {
+      "message": "Too many dates (maximum {max})."
+    },
+    "journal_empty": {
+      "message": "The journal entry has no values."
+    },
+    "journal_unknown_field": {
+      "message": "Unknown journal field: {field}."
+    },
+    "journal_inactive_field": {
+      "message": "Journal field {field} is inactive."
+    },
+    "journal_invalid_value": {
+      "message": "Invalid value for {field}: {value}."
+    },
+    "reset_streak": {
+      "message": "{habit} is a streak habit; only counters can be reset."
+    },
+    "no_reset": {
+      "message": "{habit} has no reset to undo."
+    }
+  }
+}

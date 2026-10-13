@@ -1,0 +1,36 @@
+# Habit Log dashboard (v0.2.0)
+#
+# Settings > Dashboards > Add dashboard > New dashboard from scratch, then
+# Edit > three dots > Raw configuration editor > paste.
+#
+# No view uses `visible:`. A dashboard whose every view is user-restricted can
+# render blank on first load. To hide it, use the dashboard's "Admin only" /
+# sidebar settings; Habit Log's "Allowed users" option protects the data.
+
+views:
+  - title: Habits
+    path: habits
+    icon: mdi:calendar-check
+    type: panel
+    cards:
+      - type: custom:habit-log-card
+        title: Habits
+
+  # Optional second view: long-term graphs from the sensors. Replace entity IDs
+  # with yours (Settings > Entities, search "Habit Log").
+  - title: Trends
+    path: trends
+    icon: mdi:chart-line
+    type: sections
+    max_columns: 2
+    sections:
+      - type: grid
+        cards:
+          - type: statistics-graph
+            title: Journal (daily mean)
+            entities:
+              - sensor.journal_energy
+            stat_types: [mean]
+            period: day
+            days_to_show: 90
+            chart_type: line

@@ -1,0 +1,22 @@
+{
+  "domain": "habit_log",
+  "name": "Habit Log",
+  "after_dependencies": [
+    "frontend"
+  ],
+  "codeowners": [
+    "@FiredrakeFury"
+  ],
+  "config_flow": true,
+  "dependencies": [
+    "http",
+    "websocket_api"
+  ],
+  "documentation": "https://github.com/FiredrakeFury/habit-tracker-turbo",
+  "integration_type": "service",
+  "iot_class": "calculated",
+  "issue_tracker": "https://github.com/FiredrakeFury/habit-tracker-turbo/issues",
+  "requirements": [],
+  "single_config_entry": true,
+  "version": "0.3.0"
+}
